@@ -1,0 +1,24 @@
+{
+  "name": "webdemo",
+  "version": "0.1.0",
+  "description": "A web demo for basic XRTouch devices",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XRTouch/WebDemo.git"
+  },
+  "author": "FurWaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XRTouch/WebDemo/issues"
+  },
+  "homepage": "https://github.com/XRTouch/WebDemo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.3.2"
+  }
+}

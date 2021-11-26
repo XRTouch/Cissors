@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three demo</title>
+    <script src="./socket.io.js"></script>
+    <script src="./demo.js" defer></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <input style="width: 90%; height: 10%" type="range" id="range2" min="0" max="255" step="1" onchange="setForce(this.value);" oninput="setForce(this.value);">
+    <input style="width: 90%; height: 10%" type="range" id="range" min="0" max="255" step="1">
+</body>
+</html>
