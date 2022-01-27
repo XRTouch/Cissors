@@ -30,8 +30,8 @@ io.on("connection", socket => {
             socket.emit("custom/getAngle", lastValue);
         }
     }, 33);
-    socket.on("custom/setForce", val => {
-        addon.setForce(parseInt(val));
+    socket.on("custom/setAngle", val => {
+        addon.setForce(Math.max(Math.min(parseInt(val)+30, 100), 0));
     });
 });
 

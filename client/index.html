@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <title>Ciseaux AR</title>
     <script src="socket.io.js"></script>
-    <script src="./script.js"></script>
-    <script async src="https://cdn.jsdelivr.net/gh/ganwenyao/opencv_js@master/docs/opencv.js" onload="onOpenCVReady();"></script>
+    <script src="./script.js" type="module"></script>
+    <script async src="https://cdn.jsdelivr.net/gh/ganwenyao/opencv_js@master/docs/opencv.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ganwenyao/opencv_js@master/docs/utils.js"></script>
-    <!DOCTYPE html>
+    <script src="./svd.js"></script>
+    <script src="./pos.js"></script>
+    <script src="./demo.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        canvas {
+            position: absolute;
+            top: 0px; left: 0px;
+        }
+    </style>
 </html>
 </head>
 <body>
-    <video id="video" autoplay="true" style="width:320px; height:240px;"></video>
+    <video id="video" autoplay="true" style="display: none;"></video>
     <canvas id="canvasOutput"></canvas>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="range-x">0</p>
+    <p id="range-y">0</p>
+    <p id="range-z">0</p>
 </body>
 </html>
